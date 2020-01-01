@@ -1,7 +1,7 @@
 {
-  "name": "typescript-jest",
+  "name": "pokemon-damage-simulator",
   "version": "0.0.1",
-  "description": "A barebones starter for spinning up a TypeScript/Jest environment",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -14,10 +14,14 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js,tsx,jsx}": ["eslint --fix", "jest --coverage --findRelatedTests", "git add"]
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "jest --coverage --findRelatedTests",
+      "git add"
+    ]
   },
   "keywords": [],
-  "author": "github.com/martingaston",
+  "author": "uguisu-an",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^24.0.15",
