@@ -89,3 +89,6 @@ typings/
 
 # TypeScript build directory
 build/*
+
+# VSCode
+.vscode/

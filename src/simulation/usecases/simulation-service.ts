@@ -1,5 +1,5 @@
-import DamageRange from "../entities/damage-range";
-import { BaseDamage } from "../entities/damage";
+import DamageRange from "../../game/entities/damage-range";
+import { BaseDamage } from "../../game/entities/damage";
 
 export default class SimulationService {
   public simulate(req: SimulationRequest): SimulationResponse {

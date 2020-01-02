@@ -1,6 +1,6 @@
-import Stat from "../../src/entities/stat";
-import Level from "../../src/entities/level";
-import HP from "../../src/entities/hp";
+import Stat from "../../src/game/entities/stat";
+import Level from "../../src/game/entities/level";
+import HP from "../../src/game/entities/hp";
 
 describe("ステータスの計算", () => {
   describe("Level", () => {

@@ -1,4 +1,4 @@
-import SimulationService from "./usecases/simulation-service";
+import SimulationService from "./simulation/usecases/simulation-service";
 
 // ひかえめC252エーフィからしんちょうHD252ブラッキーへのはかいこうせん
 const simulation = new SimulationService();

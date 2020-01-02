@@ -1,5 +1,5 @@
-import DamageRange from "../../src/entities/damage-range";
-import { BaseDamage } from "../../src/entities/damage";
+import DamageRange from "../../src/game/entities/damage-range";
+import { BaseDamage } from "../../src/game/entities/damage";
 
 describe("DamageRange", () => {
   describe("とくこう130族からとくぼう130族へのはかいこうせん", () => {

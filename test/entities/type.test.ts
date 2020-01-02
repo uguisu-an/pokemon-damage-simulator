@@ -1,4 +1,4 @@
-import Type from "../../src/entities/type";
+import Type from "../../src/game/entities/type";
 
 describe("Type", () => {
   const normal = Type.normal();
