@@ -1,20 +1,14 @@
-import { Damage, BaseDamage } from "./damage";
+import { Damage } from "./damage";
 
 /**
- * ダメージの範囲
+ * 乱数によるダメージの範囲
  */
 export default class DamageRange {
   public readonly damages: Damage[] = [];
 
-  public constructor(
-    atk: number,
-    def: number,
-    power: number,
-    level: number = 50
-  ) {
-    const damage = new BaseDamage(atk, def, power, level);
+  public constructor(base: Damage) {
     for (let i = 85; i <= 100; i++) {
-      this.damages.push(damage.scale(i / 100));
+      this.damages.push(base.scale(i / 100));
     }
   }
 
