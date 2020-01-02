@@ -1,11 +1,13 @@
+import Level from "./level";
+
 export default function HP(
-  level: number,
+  level: Level,
   base: number,
   individual: number,
   effort: number
 ): number {
   const baseStat = Math.floor(
-    ((base * 2 + individual + effort / 4) * level) / 100
+    ((base * 2 + individual + effort / 4) * level.value) / 100
   );
-  return baseStat + level + 10;
+  return baseStat + level.value + 10;
 }

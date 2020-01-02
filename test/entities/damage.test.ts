@@ -1,5 +1,6 @@
 import BasicDamage from "../../src/entities/basic-damage";
 import LevelDamage from "../../src/entities/level-damage";
+import Level from "../../src/entities/level";
 
 describe("BasicDamage", () => {
   it("とくこう130族からとくぼう130族へのはかいこうせん", () => {
@@ -10,7 +11,7 @@ describe("BasicDamage", () => {
 
 describe("LevelDamage", () => {
   it("ナイトヘッド", () => {
-    const damage = new LevelDamage(50);
+    const damage = new LevelDamage(new Level(50));
     expect(damage.value).toBe(50);
   });
 });
