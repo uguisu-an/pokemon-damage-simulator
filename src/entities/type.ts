@@ -1,8 +1,8 @@
 export default class Type {
-  private name: string;
+  private name: TypeName;
   private effect: TypeMap;
 
-  public constructor(name: string, effect: TypeMap) {
+  public constructor(name: TypeName, effect: TypeMap) {
     this.name = name;
     this.effect = effect;
   }
@@ -12,7 +12,7 @@ export default class Type {
   }
 
   public affect(type: Type): number {
-    return (this.effect as any)[type.name];
+    return this.effect[type.name];
   }
 
   public static normal(): Type {
@@ -107,6 +107,26 @@ export default class Type {
     });
   }
 }
+
+type TypeName =
+  | "normal"
+  | "fire"
+  | "water"
+  | "grass"
+  | "electric"
+  | "ice"
+  | "fighting"
+  | "poison"
+  | "ground"
+  | "flying"
+  | "psychic"
+  | "bug"
+  | "rock"
+  | "ghost"
+  | "dragon"
+  | "dark"
+  | "steel"
+  | "fairy";
 
 interface TypeMap {
   normal: number;
