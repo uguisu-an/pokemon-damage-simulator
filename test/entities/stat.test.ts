@@ -1,5 +1,5 @@
-import Stat from "../src/entities/stat";
-import HP from "../src/entities/hp";
+import Stat from "../../src/entities/stat";
+import HP from "../../src/entities/hp";
 
 describe("ステータスの計算", () => {
   describe("HP", () => {

@@ -1,5 +1,5 @@
-import BasicDamage from "../src/entities/basic-damage";
-import LevelDamage from "../src/entities/level-damage";
+import BasicDamage from "../../src/entities/basic-damage";
+import LevelDamage from "../../src/entities/level-damage";
 
 describe("BasicDamage", () => {
   it("とくこう130族からとくぼう130族へのはかいこうせん", () => {
