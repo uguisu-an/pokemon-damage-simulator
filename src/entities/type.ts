@@ -11,8 +11,12 @@ export default class Type {
     return this.name === type.name;
   }
 
+  public affect(type: Type): number {
+    return (this.effect as any)[type.name];
+  }
+
   public static normal(): Type {
-    return new Type("Normal", {
+    return new Type("normal", {
       normal: 1,
       fire: 1,
       water: 1,
@@ -30,6 +34,75 @@ export default class Type {
       dragon: 1,
       dark: 1,
       steel: 0.5,
+      fairy: 1
+    });
+  }
+
+  public static rock(): Type {
+    return new Type("rock", {
+      normal: 1,
+      fire: 1,
+      water: 1,
+      grass: 1,
+      electric: 1,
+      ice: 1,
+      fighting: 1,
+      poison: 1,
+      ground: 1,
+      flying: 1,
+      psychic: 1,
+      bug: 1,
+      rock: 1,
+      ghost: 1,
+      dragon: 1,
+      dark: 1,
+      steel: 1,
+      fairy: 1
+    });
+  }
+
+  public static steel(): Type {
+    return new Type("steel", {
+      normal: 1,
+      fire: 1,
+      water: 1,
+      grass: 1,
+      electric: 1,
+      ice: 1,
+      fighting: 1,
+      poison: 1,
+      ground: 1,
+      flying: 1,
+      psychic: 1,
+      bug: 1,
+      rock: 1,
+      ghost: 1,
+      dragon: 1,
+      dark: 1,
+      steel: 1,
+      fairy: 1
+    });
+  }
+
+  public static ghost(): Type {
+    return new Type("ghost", {
+      normal: 1,
+      fire: 1,
+      water: 1,
+      grass: 1,
+      electric: 1,
+      ice: 1,
+      fighting: 1,
+      poison: 1,
+      ground: 1,
+      flying: 1,
+      psychic: 1,
+      bug: 1,
+      rock: 1,
+      ghost: 1,
+      dragon: 1,
+      dark: 1,
+      steel: 1,
       fairy: 1
     });
   }
