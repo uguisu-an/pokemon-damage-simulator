@@ -5,7 +5,7 @@ export default function Stat(
   base: number,
   individual: number,
   effort: number,
-  scale: number
+  scale: number = 1.0
 ): number {
   const effortLevel = Math.floor(effort / 4);
   const baseLevel = base * 2 + individual + effortLevel;

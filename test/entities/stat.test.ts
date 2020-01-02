@@ -34,5 +34,10 @@ describe("ステータスの計算", () => {
       const status = Stat(new Level(50), 130, 31, 252, 1.1);
       expect(status).toBe(200);
     });
+
+    it("補正なし", () => {
+      const status = Stat(new Level(50), 130, 31, 252);
+      expect(status).toBe(182);
+    });
   });
 });
