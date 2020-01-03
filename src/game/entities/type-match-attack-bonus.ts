@@ -1,11 +1,12 @@
 import { Damage } from "./damage";
 import MonsterType from "./monster-type";
 import Type from "./type";
+import DamageModifier from "./damage-modifier";
 
 /**
  * タイプ一致ボーナス
  */
-export default class TypeMatchAttackBonus {
+export default class TypeMatchAttackBonus implements DamageModifier {
   private monsterType: MonsterType;
   private moveType: Type;
 
