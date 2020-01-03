@@ -14,4 +14,8 @@ export default class MonsterType {
   public hasSameType(type: Type): boolean {
     return this.types.some(t => t.equals(type));
   }
+
+  public resist(type: Type): number {
+    return this.types.reduce((p, t) => p * type.affect(t), 1.0);
+  }
 }
