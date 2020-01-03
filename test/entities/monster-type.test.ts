@@ -9,13 +9,13 @@ describe("MonsterType", () => {
     }).toThrowError();
   });
 
-  describe("#includes", () => {
+  describe("#hasSameType", () => {
     const types = new MonsterType(Type.normal(), Type.flying());
     it("タイプ一致したら真", () => {
-      expect(types.includes(Type.normal())).toBe(true);
+      expect(types.hasSameType(Type.normal())).toBe(true);
     });
     it("タイプ一致しなかったら偽", () => {
-      expect(types.includes(Type.fire())).toBe(false);
+      expect(types.hasSameType(Type.fire())).toBe(false);
     });
   });
 });

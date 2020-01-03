@@ -11,7 +11,7 @@ export default class MonsterType {
     this.types = types;
   }
 
-  public includes(type: Type): boolean {
+  public hasSameType(type: Type): boolean {
     return this.types.some(t => t.equals(type));
   }
 }
