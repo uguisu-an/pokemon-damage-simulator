@@ -7,6 +7,7 @@ export default class MonsterType {
   private types: Type[];
 
   public constructor(...types: Type[]) {
+    if (types.length > 2) throw new Error("");
     this.types = types;
   }
 

@@ -3,12 +3,18 @@ import Type from "../../src/game/entities/type";
 
 // SameTypeAttackBonus
 describe("MonsterType", () => {
-  const types = new MonsterType(Type.normal(), Type.flying());
+  it("引数は２つまで", () => {
+    expect(() => {
+      new MonsterType(Type.normal(), Type.fire(), Type.grass());
+    }).toThrowError();
+  });
+
   describe("#includes", () => {
-    it("わざのタイプと一致したら真", () => {
+    const types = new MonsterType(Type.normal(), Type.flying());
+    it("タイプ一致したら真", () => {
       expect(types.includes(Type.normal())).toBe(true);
     });
-    it("わざのタイプと一致しなかったら偽", () => {
+    it("タイプ一致しなかったら偽", () => {
       expect(types.includes(Type.fire())).toBe(false);
     });
   });
