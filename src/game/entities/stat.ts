@@ -1,4 +1,4 @@
-import Level from "./level";
+import Level from "./monster-level";
 
 export default function Stat(
   level: Level,

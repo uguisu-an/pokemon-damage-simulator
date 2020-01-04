@@ -1,4 +1,4 @@
-export default class Level {
+export default class MonsterLevel {
   public readonly value: number;
 
   public constructor(level: number) {

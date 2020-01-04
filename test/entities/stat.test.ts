@@ -1,5 +1,5 @@
 import Stat from "../../src/game/entities/stat";
-import Level from "../../src/game/entities/level";
+import Level from "../../src/game/entities/monster-level";
 import HP from "../../src/game/entities/hp";
 import EffortValue from "../../src/game/entities/effort-value";
 import IndividualValue from "../../src/game/entities/individual-value";

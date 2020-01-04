@@ -1,4 +1,4 @@
-import Level from "./level";
+import Level from "./monster-level";
 
 export default function HP(
   level: Level,
