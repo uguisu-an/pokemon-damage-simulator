@@ -1,8 +1,20 @@
 import Stat from "../../src/game/entities/stat";
+import MonsterStat from "../../src/game/entities/monster-stat";
 import Level from "../../src/game/entities/monster-level";
 import HP from "../../src/game/entities/hp";
 import EffortValue from "../../src/game/entities/effort-value";
 import IndividualValue from "../../src/game/entities/individual-value";
+
+describe("MonsterStat", () => {
+  it("値が取れる", () => {
+    expect(new MonsterStat(1).value).toBe(1);
+  });
+  it("1未満は例外", () => {
+    expect(() => {
+      new MonsterStat(0);
+    }).toThrowError();
+  });
+});
 
 describe("ステータスの計算", () => {
   describe("Level", () => {
