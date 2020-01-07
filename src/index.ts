@@ -6,12 +6,14 @@ const res = simulation.simulate({
   attacker: {
     types: ["psychic"],
     level: 50,
-    atk: 200
+    atk: 200,
+    atkRank: 3
   },
   defender: {
     types: ["dark"],
     level: 50,
     def: 200,
+    defRank: 2,
     hp: 202
   },
   move: {
