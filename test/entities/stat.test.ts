@@ -3,6 +3,7 @@ import MonsterStat from "../../src/game/entities/monster-stat";
 import Level from "../../src/game/entities/monster-level";
 import HP from "../../src/game/entities/hp";
 import EffortValue from "../../src/game/entities/effort-value";
+import EffortValues from "../../src/game/entities/effort-values";
 import IndividualValue from "../../src/game/entities/individual-value";
 
 describe("MonsterStat", () => {
@@ -82,6 +83,12 @@ describe("努力値", () => {
     }).toThrowError();
     expect(() => {
       new EffortValue(253);
+    }).toThrowError();
+  });
+  it("6つ合わせて510まで", () => {
+    new EffortValues(6, 0, 0, 252, 0, 252);
+    expect(() => {
+      new EffortValues(7, 0, 0, 252, 0, 252);
     }).toThrowError();
   });
 });
