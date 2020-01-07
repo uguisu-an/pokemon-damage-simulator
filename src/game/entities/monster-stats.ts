@@ -1,21 +1,23 @@
+import MonsterStat from "./monster-stat";
+
 /**
  * 能力値
  */
 export default class MonsterStats {
-  public readonly hp: number;
-  public readonly atk: number;
-  public readonly def: number;
-  public readonly spAtk: number;
-  public readonly spDef: number;
-  public readonly spd: number;
+  public readonly hp: MonsterStat;
+  public readonly atk: MonsterStat;
+  public readonly def: MonsterStat;
+  public readonly spAtk: MonsterStat;
+  public readonly spDef: MonsterStat;
+  public readonly spd: MonsterStat;
 
   public constructor(
-    hp: number,
-    atk: number,
-    def: number,
-    spAtk: number,
-    spDef: number,
-    spd: number
+    hp: MonsterStat,
+    atk: MonsterStat,
+    def: MonsterStat,
+    spAtk: MonsterStat,
+    spDef: MonsterStat,
+    spd: MonsterStat
   ) {
     this.hp = hp;
     this.atk = atk;
